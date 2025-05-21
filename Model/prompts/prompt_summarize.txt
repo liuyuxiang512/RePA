@@ -1,0 +1,10 @@
+You are provided with a MEMORY (a brief summary of all previous segments), a current SEGMENT, and a TOPIC (the focus of the MEMORY and the current SEGMENT). MEMORY serves as a brief repository of key content from all previous segments. Update MEMORY by integrating essential details from the SEGMENT, ensuring it aligns with the existing MEMORY, and remains concise and coherent. Keep the updated MEMORY focused on the TOPIC and within five sentences. Finally, return the updated MEMORY.
+
+TOPIC:
+${TARGET_TOPIC}
+
+SEGMENT:
+${TARGET_SEGMENT}
+
+MEMORY:
+${LONG_TERM_MEMORY}

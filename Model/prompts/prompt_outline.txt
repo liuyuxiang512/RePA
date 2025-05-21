@@ -1,0 +1,18 @@
+Generate topic-centric questions focusing on the given TOPIC from the provided TEXT. Follow the steps below:
+1. Decompose the TEXT into different facts of the given TOPIC without loss of facts.
+2. For each fact, formulate a topic-centric question centered on the given TOPIC asking about the fact. Ensure that the TOPIC appears in the question.
+3. Combine questions by eliminating duplicates and return the remaining questions in a list.
+
+TOPIC:
+${SOURCE_TOPIC}
+
+TEXT:
+${CLARIFIED_SEGMENT}
+
+Format your response as:
+
+Q: <First question>
+...
+Q: <Last question>
+
+If you cannot generate any question, return "${ERROR_TOKEN}".

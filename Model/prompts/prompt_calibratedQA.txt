@@ -1,0 +1,16 @@
+Generate a brief answer to the QUERY concerning the TOPIC, based on the KNOWLEDGE provided. The answer should be a complete sentence with its context in the QUERY. If the QUERY cannot be answered by the provided KNOWLEDGE, provide your best guess for the QUERY. After answering, assess the probability that your response is accurate, ranging from 0.0 (completely uncertain) to 1.0 (completely certain). If you cannot give a guess, generate "${ERROR_TOKEN}" with probability 0.0.
+
+KNOWLEDGE:
+${KNOWLEDGE}
+
+TOPIC:
+${TARGET_TOPIC}
+
+QUERY:
+${TARGET_QUERY}
+
+Respond in this format:
+
+Response Text: <Your answer to QUERY according to KNOWLEDGE, or your best guess if necessary, or "${ERROR_TOKEN}". Note that the answer should be a complete sentence with its context in the QUERY.>
+
+Confidence Probability: <Your estimation of how likely your response is correct, on a scale from 0.0 to 1.0.>

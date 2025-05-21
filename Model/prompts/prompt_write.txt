@@ -1,0 +1,22 @@
+You need to generate a SEGMENT from the given TEXT following three steps below.
+First, remove negative facts of TOPIC in the provided TEXT.
+Next, re-write the TEXT centered on the given TOPIC to strictly align with the EXEMPLAR's pronoun usage, content and structure. Eliminate any unnecessary details in TEXT, refraining from adding new information (talking points) beyond those in EXEMPLAR. Keep the revision accurate and relevant about TOPIC according to TEXT, and you now get a DRAFT SEGMENT.
+Finally, compare the DRAFT SEGMENT against the given MEMORY (a brief summary of all previous segments). If the DRAFT SEGMENT contains exact content that directly overlaps with the MEMORY, revise the SEGMENT by removing these redundancies, and return the revised FINAL SEGMENT. Otherwise, return the DRAFT SEGMENT as FINAL SEGMENT without revision.
+
+TOPIC:
+${TARGET_TOPIC}
+
+EXEMPLAR:
+${SEGMENT}
+
+TEXT:
+${TARGET_ANSWERS}
+
+MEMORY:
+${LONG_TERM_MEMORY}
+
+Respond in this format:
+
+DRAFT SEGMENT: <The draft segment after the first step>
+
+FINAL SEGMENT: <The final segment after the second step>

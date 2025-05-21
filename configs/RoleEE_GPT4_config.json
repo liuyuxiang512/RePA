@@ -1,0 +1,38 @@
+{
+  "prompts": "./Model/prompts",
+  "topk_Engine": 50,
+  "topk_DPR": 5,
+  "deterministic": "on",
+  "seed": 4202,
+  "temperature": 0.3,
+  "frequency_penalty": 0.3,
+  "n_choices": 1,
+  "max_generation_tokens": 256,
+  "retrievers": [
+    "Bing",
+    "DPR"
+  ],
+  "num_knowledge_piece": {
+    "Bing": 10,
+    "DPR": 3
+  },
+  "outline_error_token": "Failed to Generate.",
+  "calibratedQA_error_token": "Failed to Answer.",
+  "write_error_token": "Segment Removed.",
+  "confidence_threshold": 0.7,
+
+  "dataset_name": "RoleEE",
+  "dataset": "./data/RoleEE/topic_text_pair.json",
+  "DPR_knowledge_tensors": "./data/RoleEE/knowledge_tensors.pt",
+  "DPR_knowledge_pieces": "./data/RoleEE/knowledge_pieces.txt",
+  "output_folder": "./data/RoleEE/results/GPT4",
+  "model": "gpt-4-0125-preview",
+  "exclude_domains": [
+    "wikipedia.org",
+    "wikiwand.com",
+    "wiki2.org",
+    "wikimedia.org"
+  ],
+
+  "ablation": "Full"
+}

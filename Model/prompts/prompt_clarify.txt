@@ -1,0 +1,14 @@
+Clarify the provided TEXT about the given TOPIC by substituting every pronoun present with its corresponding antecedent, as identified from its preceding context provided in SHORT TERM MEMORY. The antecedents should be discerned based on their latest reference in SHORT TERM MEMORY. In addition, replace the abbreviated forms of the TOPIC in the TEXT with their full names. Then, return the revised version of TEXT that includes these updates.
+
+TOPIC:
+${SOURCE_TOPIC}
+
+SHORT TERM MEMORY:
+${SHORT_TERM_MEMORY}
+
+TEXT:
+${SEGMENT}
+
+Respond in this format:
+
+Clarified TEXT: <The revised TEXT.>

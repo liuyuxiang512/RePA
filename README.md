@@ -2,7 +2,7 @@
 
 ---
 
-This repository contains source code and data for [*Writing Like the Best*: Exemplar-Based Expository Text Generation](https://google.com).
+This repository contains source code and data for our ACL 2025 Paper [*Writing Like the Best*: Exemplar-Based Expository Text Generation](https://arxiv.org/abs/2505.18859).
 
 ## How to Run
 
@@ -26,3 +26,24 @@ You may change *baseline* to *ablation* for different evaluation modes.
 
 If you use our work, please consider citing our preprint:
 
+```
+@inproceedings{liu-chang-2025-writing,
+    title = "Writing Like the Best: Exemplar-Based Expository Text Generation",
+    author = "Liu, Yuxiang  and
+      Chang, Kevin Chen-Chuan",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.1250/",
+    doi = "10.18653/v1/2025.acl-long.1250",
+    pages = "25739--25764",
+    ISBN = "979-8-89176-251-0",
+    abstract = "We introduce the Exemplar-Based Expository Text Generation task, aiming to generate an expository text on a new topic using an exemplar on a similar topic. Current methods fall short due to their reliance on extensive exemplar data, difficulty in adapting topic-specific content, and issues with long-text coherence. To address these challenges, we propose the concept of Adaptive Imitation and present a novel Recurrent Plan-then-Adapt (RePA) framework. RePA leverages large language models (LLMs) for effective adaptive imitation through a fine-grained plan-then-adapt process. RePA also enables recurrent segment-by-segment imitation, supported by two memory structures that enhance input clarity and output coherence. We also develop task-specific evaluation metrics{--}imitativeness, adaptiveness, and adaptive-imitativeness{--}using LLMs as evaluators. Experimental results across our collected three diverse datasets demonstrate that RePA surpasses existing baselines in producing factual, consistent, and relevant texts for this task."
+}
+```

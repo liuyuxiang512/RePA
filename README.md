@@ -10,7 +10,7 @@ This repository contains source code and data for our ACL 2025 Paper [*Writing L
 
 ### Step 2: Run main experiments
 
-You may change the *Wikipedia* to *RoleEE* or *USNews* for corresponding datasets, or change *GPT4* to *LLaMA3* for different backbone LLM, and change *false* to *true* for debug mode. You may change the corresponding config files for detailed settings, which is under the "configs" folder.
+You may change the *Wikipedia* to *RoleEE* or *USNews* for corresponding datasets, or change *GPT4* to *LLaMA3* for different backbone LLM, and change *false* to *true* for debug mode. You may change the corresponding config files for detailed settings, which is under the `/configs` folder.
 
 > bash experiments.sh Wikipedia GPT4 false
 
@@ -21,6 +21,8 @@ You may change *baseline* to *ablation* for different evaluation modes.
 > bash evaluations.sh
 
 ## Data
+
+You may download our datasets [here](https://drive.google.com/drive/folders/1Y3c5wW-7HGmUATYf570cWZMgOtdBtj2p?usp=sharing) and save in `/data`.
 
 ## Reference
 

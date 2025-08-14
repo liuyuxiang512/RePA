@@ -29,12 +29,8 @@ If you use our work, please consider citing our preprint:
 ```
 @inproceedings{liu-chang-2025-writing,
     title = "Writing Like the Best: Exemplar-Based Expository Text Generation",
-    author = "Liu, Yuxiang  and
-      Chang, Kevin Chen-Chuan",
-    editor = "Che, Wanxiang  and
-      Nabende, Joyce  and
-      Shutova, Ekaterina  and
-      Pilehvar, Mohammad Taher",
+    author = "Liu, Yuxiang  and  Chang, Kevin Chen-Chuan",
+    editor = "Che, Wanxiang  and  Nabende, Joyce  and  Shutova, Ekaterina  and  Pilehvar, Mohammad Taher",
     booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
     month = jul,
     year = "2025",
